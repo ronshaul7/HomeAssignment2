@@ -241,30 +241,25 @@ header{
         }
 
 
+/* Hide the navbar with icons initially */
+.navbar {
+    display: none;
+}
 
-        /* Default styles for the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* Styles for the icon */
-  .navbar .icon {
-    display: none; /* Hide the icon by default */
-  }
-  
-  /* Media query for screens with a maximum width of 700px */
-  @media (max-width: 700px) {
+/* Media query for phones*/
+@media (max-width: 700px) {
+    /* Hide the regular navigation links on phone screens */
+    .navList {
+        display: none;
+    }
+    /* Show the navbar with icons on phone screens */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Optional: Center the links vertically */
+    }
     .navbar a {
-      display: none; /* Hide the links */
+        padding: 10px;
+        text-align: center;
     }
-    .navbar .icon {
-      display: block; /* Show the icon */
-      float: right; /* Align the icon to the right */
-      padding: 14px 16px;
-    }
-  }
-  
+}
