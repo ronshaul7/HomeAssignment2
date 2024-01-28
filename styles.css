@@ -59,6 +59,7 @@ header{
     float: right; /* Align the image to the right */
 }
 .navList {
+    list-style-type: none;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -255,11 +256,71 @@ header{
     /* Show the navbar with icons on phone screens */
     .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center; /* Optional: Center the links vertically */
     }
     .navbar a {
         padding: 10px;
         text-align: center;
     }
+    .main-content p {
+        font-size: 14px; /* Decrease the font size for smaller screens */
+        width: auto; /* Allow the text to wrap based on the screen width */
+        padding: 0 10px; /* Add some padding to the sides for better readability */
+    }
+    .skills .skills-box {
+        width: 100%; /* Set the width to 100% to make the boxes fill the available space */
+        height: auto; /* Allow the height to adjust based on the content */
+        margin: 10px; /* Add some margin around the boxes for spacing */
+        padding: 10px; /* Add padding inside the boxes for spacing */
+        font-size: 14px; /* Decrease the font size for smaller screens */
+        box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    }
+    .main h1 {
+        font-size: 40px; /* Decrease the font size of the heading */
+    }
+    #homepage img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain the aspect ratio of the image */
+        margin: 0 auto; /* Center the image */
+        display: block; /* Ensure the image takes up the full width */
+    }
+    .main-content p {
+        font-size: 14px; /* Decrease the font size of the paragraph */
+        width: 90%; /* Adjust the width of the paragraph to fit within the viewport */
+        margin: 0 auto; /* Center the paragraph */
+    }
+    .about h1 {
+        font-size: 40px; /* צמצם את גודל הכותרת */
+    }
+    .about p {
+        font-size: 14px; /* צמצם את גודל הפסקה */
+        width: 90%; /* תאם את רוחב הפסקה כך שתתאים לרוחב המסך */
+        margin: 0 auto; /* המרכז את הפסקה */
+    }
+    .skills h1 {
+        font-size: 40px; /* צמצם את גודל הכותרת */
+    }
+    .card-box {
+        flex-direction: column; /* שנה את כיוון האלמנטים לכיוון אנכי */
+        align-items: center; /* מרכז את האלמנטים באופן אנכי */
+    }
+    .skills .skills-box {
+        width: 90%; /* תאם את רוחב הקופסאות לרוחב המסך */
+        margin: 10px 0; /* הוסף שוליים מעליונים ותחתונים */
+    }
+    .project h1 {
+        font-size: 40px; /* צמצם את גודל הכותרת */
+    }
+    .project .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr)); /* שנה את רוחב התאים כדי שימלאו את המסך */
+        gap: 2rem; /* יצר רווח בין התאים */
+    }
+    .project .box-container .box .image {
+        height: 20rem; /* צמצם את גודל התמונה */
+    }
+}
+
+.selected{
+    background-color: beige;
 }
