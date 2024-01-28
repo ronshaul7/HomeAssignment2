@@ -78,6 +78,7 @@ header{
   .navList a:hover{
     text-shadow: 3px 3px 20px,-2px 1px 30px;
   }
+
   .section-title{
     font-family: serif;
     position: relative;
@@ -206,5 +207,35 @@ header{
     transform: scale(1.05); 
   }
   
-  @media (max-width: 700px) {
-    }
+  
+
+
+    @media (max-width: 1024px) {
+        
+      }
+
+      
+
+
+
+
+        @media (max-width: 700px) {
+            .navList {
+                display: none; /* Hide the regular navigation links */
+            }
+            .toggle-icon {
+                display: block; /* Show the toggle icon */
+                text-align: center;
+                margin-top: 10px;
+            }
+            .toggle-icon i {
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .toggle-icon i:hover {
+                color: blue; /* Change color on hover if needed */
+            }
+            .navList.active {
+                display: block; /* Show the dropdown menu when active */
+            }
+        }
