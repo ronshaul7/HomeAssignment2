@@ -114,7 +114,7 @@ header{
     line-height: 30px;
     margin-bottom: 15px;
 }
-.project h1{
+.memories h1{
     text-align: center;
     color: #0c0b0c;
     font-size: 50px;
@@ -122,35 +122,35 @@ header{
     text-transform: uppercase;
 }
 
-.project .box-container .box .image {
+.memories .box-container .box .image {
     height: 30rem;
     overflow: hidden;
     position: relative;
   }
   
-  .project .box-container .box .image img {
+  .memories .box-container .box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .project .box-container {
+  .memories .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 4rem;
   }
   
-  .project .box-container .box {
+  .memories .box-container .box {
     background-color: var(--light-bg);
     padding: 1rem;
     box-shadow: var(--box-shadow);
   }
   
-  .project .box-container .box:hover .image img {
+  .memories .box-container .box:hover .image img {
     transform: scale(1.2);
   }
   
-  .project .box-container .box .image .content {
+  .memories .box-container .box .image .content {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -163,14 +163,14 @@ header{
     transform: translateY(100%);
   }
   
-  .project .box-container .box .image .content h2 {
+  .memories .box-container .box .image .content h2 {
     font-size: 2rem;
     color: var(--white);
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
   
-  .project .box-container .box:hover .image .content {
+  .memories .box-container .box:hover .image .content {
     transform: translateY(0);
   }
   
@@ -208,18 +208,6 @@ header{
     transform: scale(1.05); 
   }
   
-  
-
-
-    @media (max-width: 1024px) {
-        
-      }
-
-      
-
-
-
-
         @media (max-width: 700px) {
             .navList {
                 display: none; /* Hide the regular navigation links */
@@ -309,14 +297,14 @@ header{
         width: 90%; /* תאם את רוחב הקופסאות לרוחב המסך */
         margin: 10px 0; /* הוסף שוליים מעליונים ותחתונים */
     }
-    .project h1 {
+    .memories h1 {
         font-size: 40px; /* צמצם את גודל הכותרת */
     }
-    .project .box-container {
+    .memories .box-container {
         grid-template-columns: repeat(auto-fit, minmax(90%, 1fr)); /* שנה את רוחב התאים כדי שימלאו את המסך */
         gap: 2rem; /* יצר רווח בין התאים */
     }
-    .project .box-container .box .image {
+    .memories .box-container .box .image {
         height: 20rem; /* צמצם את גודל התמונה */
     }
 }
