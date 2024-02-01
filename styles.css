@@ -208,28 +208,6 @@ header{
     transform: scale(1.05); 
   }
   
-        @media (max-width: 700px) {
-            .navList {
-                display: none; /* Hide the regular navigation links */
-            }
-            .toggle-icon {
-                display: block; /* Show the toggle icon */
-                text-align: center;
-                margin-top: 10px;
-            }
-            .toggle-icon i {
-                font-size: 24px;
-                cursor: pointer;
-            }
-            .toggle-icon i:hover {
-                color: blue; /* Change color on hover if needed */
-            }
-            .navList.active {
-                display: block; /* Show the dropdown menu when active */
-            }
-        }
-
-
 /* Hide the navbar with icons initially */
 .navbar {
     display: none;
@@ -237,6 +215,24 @@ header{
 
 /* Media query for phones*/
 @media (max-width: 700px) {
+    .navList {
+        display: none; /* Hide the regular navigation links */
+    }
+    .toggle-icon {
+        display: block; /* Show the toggle icon */
+        text-align: center;
+        margin-top: 10px;
+    }
+    .toggle-icon i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .toggle-icon i:hover {
+        color: blue; /* Change color on hover if needed */
+    }
+    .navList.active {
+        display: block; /* Show the dropdown menu when active */
+    }
     /* Hide the regular navigation links on phone screens */
     .navList {
         display: none;
