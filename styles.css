@@ -27,8 +27,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .main h1 {
     text-align: center;
     color: #0c0b0c;
@@ -97,6 +105,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
 .about h1{
     text-align: center;
@@ -308,3 +317,6 @@ header{
 .selected{
     background-color: beige;
 }
+
+
+
